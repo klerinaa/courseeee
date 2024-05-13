@@ -93,9 +93,18 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+             " lib/owlcarousel/assets/owl.carousel.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "lib/wow/wow.min.js",
+              "lib/easing/easing.min.js",
+              "lib/waypoints/waypoints.min.js",
+              "lib/owlcarousel/owl.carousel.min.js"
+            ]
           }
         }
       }

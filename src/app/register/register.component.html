@@ -1,0 +1,98 @@
+<section class="container">
+    <header>Registration Form</header>
+    <form class="form" [formGroup]="registrationForm" (ngSubmit)="submitForm()">
+        <div class="input-box">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="Enter full name" formControlName="fullName">
+            <div *ngIf="registrationForm.get('fullName')?.errors && (registrationForm.get('fullName')?.dirty || registrationForm.get('fullName')?.touched)">
+                <div>Full Name is required</div>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email-address" placeholder="Enter email address" formControlName="emailAddress">
+            <div *ngIf="registrationForm.get('emailAddress')?.errors && (registrationForm.get('emailAddress')?.dirty || registrationForm.get('emailAddress')?.touched)">
+                <div>Email Address is required</div>
+            </div>
+            <div *ngIf="registrationForm.get('emailAddress')?.errors && (registrationForm.get('emailAddress')?.dirty || registrationForm.get('emailAddress')?.touched)">
+                <div>Invalid email format</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" placeholder="Enter phone number" formControlName="phoneNumber">
+                <div *ngIf="registrationForm.get('phoneNumber')?.errors && (registrationForm.get('phoneNumber')?.dirty || registrationForm.get('phoneNumber')?.touched)">
+                    <div>Phone Number is required</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="birth-date">Birth Date</label>
+                <input type="date" id="birth-date" placeholder="Enter birth date" formControlName="birthDate">
+                <div *ngIf="registrationForm.get('birthDate')?.errors && (registrationForm.get('birthDate')?.dirty || registrationForm.get('birthDate')?.touched)">
+                    <div>Birth Date is required</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="male" formControlName="gender">
+                    <label for="male">Male</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="female" name="gender" value="female" formControlName="gender">
+                    <label for="female">Female</label>
+                </div>
+                <div class="gender">
+                    <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say" formControlName="gender">
+                    <label for="prefer-not-to-say">Prefer not to say</label>
+                </div>
+            </div>
+            <div *ngIf="registrationForm.get('gender')?.errors && (registrationForm.get('gender')?.dirty || registrationForm.get('gender')?.touched)">
+                <div>Gender is required</div>
+            </div>
+        </div>
+
+        <div class="input-box address">
+            <label for="street-address">Address</label>
+            <input type="text" id="street-address" placeholder="Enter street address" formControlName="streetAddress">
+            <input type="text" id="street-address-line2" placeholder="Enter street address line 2" formControlName="streetAddressLine2">
+            <div class="column">
+                <div class="select-box">
+                    <select id="country" formControlName="country" placeholder="Enter your country">
+                        <option value="">Select Country</option>
+                        <option value="America">America</option>
+                        <option value="Japan">Japan</option>
+                        <option value="India">India</option>
+                        <option value="Nepal">Nepal</option>
+                    </select>
+                </div>
+                <input type="text" id="city" placeholder="Enter your city" formControlName="city">
+            </div>
+            <div class="column">
+                <input type="text" id="region" placeholder="Enter your region" formControlName="region">
+                <input type="number" id="postal-code" placeholder="Enter postal code" formControlName="postalCode">
+            </div>
+        </div>
+
+        <div class="input-box">
+            <label for="course">Select Course</label>
+            <div class="select-box">
+                <select id="course" formControlName="course">
+                    <option value="">Select Course</option>
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                    <option value="course3">Course 3</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>

@@ -1,0 +1,218 @@
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div  class="owl-carousel header-carousel position-relative">
+      
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="assets/img/carousel-2.jpg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" >
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-sm-10 col-lg-8">
+                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
+                            <h1 class="display-3 text-white animated slideInDown">Get Educated Online From Your Home</h1>
+                            <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                          
+                            <a (click)="redirectToJoinUs()" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+<!-- About Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+              <div class="position-relative h-100">
+                <img class="img-fluid" src="assets/img/about.jpg" alt="">
+              </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+              <h1 class="mb-4">Welcome to eLEARNING</h1>
+              <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+              <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+              <div class="row gy-2 gx-4 mb-4">
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                  </div>
+              </div>
+             
+          </div>
+      </div>
+  </div>
+</div>
+<!-- About End -->
+
+ <!-- Courses Start -->
+ <div class="container-fluid px-0 py-5">
+  <div class="row mx-0 justify-content-center pt-5">
+      <div class="col-lg-4">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+          <h1 class="mb-5">Courses Categories</h1>
+      </div>
+      </div>
+  </div>
+  <div class="owl-carousel courses-carousel row">
+    <div class="courses-item position-relative col-lg-4" *ngFor="let course of courses">
+      <img class="img-fluid" [src]="course.image" alt="">
+      <div class="courses-text">
+        <h4 class="text-center text-white px-3">{{ course.title }}</h4>
+        <div class="border-top w-100 mt-3">
+          <div class="d-flex justify-content-between p-4">
+            <span class="text-white"><i class="fa fa-user mr-2"></i>{{ course.instructor }}</span>
+          </div>
+        </div>
+        <div class="w-100 bg-white text-center p-4">
+          <a class="btn btn-primary" (click)="navigateToDetails(course)">Course Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Feature Start -->
+<div class="container-fluid bg-image" style="margin: 90px 0;">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-7 my-5 pt-5 pb-lg-5">
+             
+              <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Why Choose Us?</h6>
+                <h1 class="mb-5">Why You Should Start Learning with Us?</h1>
+            </div>
+              
+              <p class="mb-4 pb-2">Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.</p>
+              <div class="d-flex mb-3">
+                  <div class="btn-icon bg-primary mr-4">
+                      <i class="fa fa-2x fa-graduation-cap text-white"></i>
+                  </div>
+                  <div class="mt-n1">
+                      <h4>Skilled Instructors</h4>
+                      <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                  </div>
+              </div>
+              <div class="d-flex mb-3">
+                  <div class="btn-icon bg-secondary mr-4">
+                      <i class="fa fa-2x fa-certificate text-white"></i>
+                  </div>
+                  <div class="mt-n1">
+                      <h4>International Certificate</h4>
+                      <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                  </div>
+              </div>
+              <div class="d-flex">
+                  <div class="btn-icon bg-warning mr-4">
+                      <i class="fa fa-2x fa-book-reader text-white"></i>
+                  </div>
+                  <div class="mt-n1">
+                      <h4>Online Classes</h4>
+                      <p class="m-0">Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-5" style="min-height: 500px;">
+              <div class="position-relative h-100">
+                  <img class="position-absolute w-100 h-100" src="assets/img/feature.jpg" style="object-fit: cover;">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Feature Start -->
+</div>
+<!-- Courses End -->
+ <!-- Contact Start -->
+ <div class="container-fluid py-5">
+  <div class="container py-5">
+      <div class="row align-items-center">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+              <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
+                  <div class="d-flex align-items-center mb-5">
+                      <div class="btn-icon bg-primary mr-4">
+                          <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+                      </div>
+                      <div class="mt-n1">
+                          <h4>Our Location</h4>
+                          <p class="m-0">123 Street, New York, USA</p>
+                      </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-5">
+                      <div class="btn-icon bg-secondary mr-4">
+                          <i class="fa fa-2x fa-phone-alt text-white"></i>
+                      </div>
+                      <div class="mt-n1">
+                          <h4>Call Us</h4>
+                          <p class="m-0">+012 345 6789</p>
+                      </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                      <div class="btn-icon bg-warning mr-4">
+                          <i class="fa fa-2x fa-envelope text-white"></i>
+                      </div>
+                      <div class="mt-n1">
+                          <h4>Email Us</h4>
+                          <p class="m-0">info&#64;example.com</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-7">
+            
+              <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Need Help?</h6>
+                <h1 class="mb-5">Send Us A Message</h1>
+            </div>
+            <div class="contact-form">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                  <div class="row">
+                    <div class="col-6 form-group">
+                      <input type="text" formControlName="fullName" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name">
+                      <div *ngIf="contactForm.get('fullName')?.invalid && (contactForm.get('fullName')?.dirty || contactForm.get('fullName')?.touched)"
+                           class="text-danger">Name is required</div>
+                    </div>
+                    <div class="col-6 form-group">
+                      <input type="email" formControlName="emailAddress" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email">
+                      <div *ngIf="contactForm.get('emailAddress')?.invalid && (contactForm.get('emailAddress')?.dirty || contactForm.get('emailAddress')?.touched)"
+                           class="text-danger">Please enter a valid email address</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" formControlName="subject" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject">
+                    <div *ngIf="contactForm.get('subject')?.invalid && (contactForm.get('subject')?.dirty || contactForm.get('subject')?.touched)"
+                         class="text-danger">Subject is required</div>
+                  </div>
+                  <div class="form-group">
+                    <textarea formControlName="message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message"></textarea>
+                    <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)"
+                         class="text-danger">Message is required</div>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
+                  </div>
+                </form>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Contact End -->
